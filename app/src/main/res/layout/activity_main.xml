@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9FB2EBF2"
+    android:background="@drawable/fondo4"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -16,7 +16,7 @@
         app:tabTextColor="@color/white"
         app:tabIconTint="@color/white"
         app:tabSelectedTextColor="@color/white"
-android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
