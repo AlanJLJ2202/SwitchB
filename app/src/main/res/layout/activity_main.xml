@@ -23,7 +23,7 @@
         app:tabGravity="center">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem"
+            android:id="@+id/tabInicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_baseline_dashboard_24"
@@ -34,18 +34,7 @@
             tools:layout_editor_absoluteY="0dp" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Item"
-            android:icon="@drawable/ic_baseline_discount_24"
-            tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_conversion_absoluteWidth="0dp"
-            tools:layout_editor_absoluteX="142dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem3"
+            android:id="@+id/tabSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Switch"
@@ -56,7 +45,20 @@
             tools:layout_editor_absoluteY="0dp" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItem4"
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:icon="@drawable/ic_baseline_discount_24"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"
@@ -81,12 +83,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="61dp"
-        android:layout_height="32dp"
-        app:icon="@drawable/ic_action_name"
-        android:backgroundTint="#EF5350"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:foregroundGravity="center"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

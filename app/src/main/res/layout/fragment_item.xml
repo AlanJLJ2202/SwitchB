@@ -38,7 +38,7 @@
             app:icon="@drawable/ic_action_name"
 
             app:layout_constraintStart_toStartOf="@+id/toolbar"
-            tools:layout_editor_absoluteY="7dp" />
+            tools:layout_editor_absoluteY="0dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
