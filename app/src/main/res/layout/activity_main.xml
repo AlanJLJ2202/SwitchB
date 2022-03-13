@@ -12,15 +12,15 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:tabIndicatorColor="@android:color/black"
-        app:tabTextColor="@color/white"
-        app:tabIconTint="@color/white"
-        app:tabSelectedTextColor="@color/white"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tabGravity="center">
+        app:tabGravity="center"
+        app:tabIconTint="@color/white"
+        app:tabIndicatorColor="@android:color/black"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabInicio"
@@ -37,8 +37,8 @@
             android:id="@+id/tabSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Switch"
             android:icon="@drawable/ic_baseline_swap_horiz_24"
+            android:text="Switch"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp"
             tools:layout_editor_absoluteX="206dp"
@@ -48,49 +48,34 @@
             android:id="@+id/tabItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Item"
             android:icon="@drawable/ic_baseline_discount_24"
+            android:text="Item"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp"
             tools:layout_editor_absoluteX="142dp"
             tools:layout_editor_absoluteY="0dp" />
 
 
-
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search"
             android:icon="@drawable/ic_baseline_search_24"
+            android:text="Search"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp"
             tools:layout_editor_absoluteX="270dp"
             tools:layout_editor_absoluteY="0dp" />
     </com.google.android.material.tabs.TabLayout>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="?attr/colorPrimary"
-        android:backgroundTint="#E57373"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        android:foregroundGravity="center"
-        android:text="Ingresar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></androidx.viewpager.widget.ViewPager>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

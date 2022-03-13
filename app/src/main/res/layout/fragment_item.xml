@@ -4,41 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".ItemFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar4"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="?attr/colorPrimary"
-            android:backgroundTint="#673AB7"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="61dp"
-            android:layout_height="32dp"
-            app:icon="@drawable/ic_action_name"
-
-            app:layout_constraintStart_toStartOf="@+id/toolbar"
-            tools:layout_editor_absoluteY="7dp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="61dp"
-            android:layout_height="32dp"
-            app:icon="@drawable/ic_action_name"
-
-            app:layout_constraintStart_toStartOf="@+id/toolbar"
-            tools:layout_editor_absoluteY="0dp" />
+        android:layout_height="match_parent"
+        android:visibility="visible">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -59,28 +31,34 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/btnAgregar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="44dp"
             android:text="Agregar"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="46dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="36dp"
             android:text="Filtrar"
-            tools:layout_editor_absoluteX="278dp"
-            tools:layout_editor_absoluteY="45dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:layout_marginBottom="292dp"
             android:text="CardView"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="265dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

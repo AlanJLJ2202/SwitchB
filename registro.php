@@ -1,12 +1,11 @@
 <?php
+$hostname_localhost="localhost";
+$database_localhost="";
+$username_localhost="root";
+$password_localhost="";
+$json=array();
 
-hostname_localhost="localhost";
-database_localhost="";
-username_localhost="root";
-password_localhost="";
-json=array();
-
-    if(isset($_GET["nombre"]) && isset($_GET["email"]) isset($_GET["password"]) &&){
+    if(isset($_GET["nombre"]) && isset($_GET["email"]) && isset($_GET["password"])){
         $nombre=$_GET['nombre'];
         $email=$_GET['email'];
         $password=$_GET['password'];

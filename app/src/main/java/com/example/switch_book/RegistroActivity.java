@@ -1,8 +1,11 @@
 package com.example.switch_book;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+
+import org.json.JSONObject;
 
 public class RegistroActivity extends AppCompatActivity {
 
@@ -11,4 +14,6 @@ public class RegistroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
     }
+
+
 }
