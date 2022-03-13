@@ -4,15 +4,12 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import org.json.JSONObject;
-
-public class RegistroActivity extends AppCompatActivity {
+public class RegistroUsuarioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
+        setContentView(R.layout.activity_registrousuario);
     }
 
 
